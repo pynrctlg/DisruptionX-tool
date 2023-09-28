@@ -96,7 +96,7 @@ $(document).ready(function () {
     if (checked) {
       $(".radio-checkbox label").removeClass("active");
       $(".continue").fadeTo("slow", 1);
-      $(this).next().addClass("active");
+      $(this).next().find('.sub').addClass("active");
 
       if ($(".continue").attr("data-attr") === "10") {
         $(".append-html .append-html-in").remove();

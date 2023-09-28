@@ -11024,4 +11024,28 @@ ul li:last-child {
 }
 .append-html p {
   text-align: center;
+}
+
+.append-html-in .sub[for=mind-maintenance],
+.append-html-in .sub[for=mood-geisting],
+.append-html-in .sub[for=climate-credit] {
+  cursor: default !important;
+  border: none;
+}
+.append-html-in .sub[for=mind-maintenance]:hover p,
+.append-html-in .sub[for=mood-geisting]:hover p,
+.append-html-in .sub[for=climate-credit]:hover p {
+  background: none;
+}
+.append-html-in .sub[for=mind-maintenance].active p,
+.append-html-in .sub[for=mood-geisting].active p,
+.append-html-in .sub[for=climate-credit].active p {
+  background: none;
+  border: none;
+}
+.append-html-in .sub[for=mind-maintenance] p,
+.append-html-in .sub[for=mood-geisting] p,
+.append-html-in .sub[for=climate-credit] p {
+  border: none;
+  min-height: auto;
 }/*# sourceMappingURL=style.min.css.map */

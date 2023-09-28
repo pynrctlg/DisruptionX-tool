@@ -15,7 +15,7 @@ body {
   background-repeat: repeat;
   position: relative;
   min-height: 100vh;
-  &.start-question{
+  &.start-question {
     &::before {
       width: 600px;
       height: 200%;
@@ -27,7 +27,6 @@ body {
       transform: skew(-20deg, 20deg);
     }
   }
-  
 }
 * {
   box-sizing: border-box;
@@ -130,18 +129,18 @@ label {
   &.sub {
     font-size: 15px;
     cursor: pointer;
-    &.active{
-      p{
-        background: rgba(255,255,255,0.5);
+    &.active {
+      p {
+        background: rgba(255, 255, 255, 0.5);
         border-color: $white;
       }
     }
-    h3{
+    h3 {
       margin-top: 20px;
       font-size: 16px;
       text-align: center;
     }
-    p{
+    p {
       text-align: center;
       font-size: 16px;
       padding: 10px;
@@ -150,14 +149,14 @@ label {
       display: flex;
       min-height: 135px;
       align-items: center;
-      transition: ease-in-out all .15s;
+      transition: ease-in-out all 0.15s;
     }
-    input{
+    input {
       display: none;
     }
-    &:hover{
-      p{
-        background: rgba(255,255,255,0.5);
+    &:hover {
+      p {
+        background: rgba(255, 255, 255, 0.5);
       }
     }
   }
@@ -199,9 +198,9 @@ label {
   background-color: #fecc00;
   background-image: url(../img/bg.png);
   overflow: hidden;
-  .start-question-button{
-    transition: ease-in-out all .15s;
-    &:hover{
+  .start-question-button {
+    transition: ease-in-out all 0.15s;
+    &:hover {
       transform: scale(1.1);
     }
   }
@@ -218,38 +217,59 @@ label {
     left: 20px;
   }
 }
-ul{
+ul {
   padding-left: 0;
-  li{
+  li {
     margin-bottom: 10px;
-    b{
+    b {
       margin-right: 5px;
       display: inline-block;
     }
-    &:last-child{
+    &:last-child {
       margin-bottom: 0;
     }
   }
 }
-.text{
+.text {
   margin-bottom: 10px;
   display: inline-block;
 }
-.autoWriteText{
-  display:none;
+.autoWriteText {
+  display: none;
 }
-.p2{
+.p2 {
   max-height: 90vh;
   overflow: auto;
 }
-.append-html{
-  h3{
+.append-html {
+  h3 {
     text-align: center;
     font-size: 18px;
     margin-bottom: 10px;
   }
-  p{
+  p {
     text-align: center;
+  }
+}
+
+.append-html-in .sub[for="mind-maintenance"],
+ .append-html-in .sub[for="mood-geisting"],
+ .append-html-in .sub[for="climate-credit"]
+ {
+  cursor: default !important;
+  border: none;
+  &:hover p{
+    background: none;
+  }
+  &.active{
+   p{
+    background: none;
+    border: none;
+   }
+  }
+  p{
+    border: none;
+    min-height: auto;
   }
 }
 @include media-breakpoint-only(xl) {
