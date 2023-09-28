@@ -1,0 +1,268 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $font1;
+  overflow-y: hidden;
+  height: 100%;
+  font-family: Inter var, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+    Noto Color Emoji;
+  background-color: #fecc00;
+  background-image: url(../img/bg.png);
+  background-repeat: repeat;
+  position: relative;
+  min-height: 100vh;
+  &.start-question{
+    &::before {
+      width: 600px;
+      height: 200%;
+      position: absolute;
+      top: -20%;
+      left: 0;
+      content: "";
+      background: $white;
+      transform: skew(-20deg, 20deg);
+    }
+  }
+  
+}
+* {
+  box-sizing: border-box;
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background: $white;
+    border-radius: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $black;
+    border-radius: 5px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #997b05;
+  }
+}
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+div,
+b,
+u,
+i,
+div,
+header,
+thead,
+table,
+tr,
+td,
+strong,
+footer,
+section,
+content,
+picture,
+figure,
+img,
+nav,
+a,
+b,
+text,
+figure,
+input,
+label,
+select,
+option,
+textarea,
+label {
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  box-sizing: border-box;
+  font-family: $font1;
+  scroll-behavior: inherit !important;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.login-content {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 5px;
+  img {
+    max-width: 200px;
+  }
+}
+.color-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.place-center {
+  place-items: center;
+}
+.h-screen {
+  height: 100vh;
+}
+.form-group {
+  margin-bottom: 40px;
+}
+label {
+  font-weight: bold;
+  &.sub {
+    font-size: 15px;
+    cursor: pointer;
+    &.active{
+      p{
+        background: rgba(255,255,255,0.5);
+        border-color: $white;
+      }
+    }
+    h3{
+      margin-top: 20px;
+      font-size: 16px;
+      text-align: center;
+    }
+    p{
+      text-align: center;
+      font-size: 16px;
+      padding: 10px;
+      border: 1px solid $black;
+      width: 100%;
+      display: flex;
+      min-height: 135px;
+      align-items: center;
+      transition: ease-in-out all .15s;
+    }
+    input{
+      display: none;
+    }
+    &:hover{
+      p{
+        background: rgba(255,255,255,0.5);
+      }
+    }
+  }
+}
+.hide {
+  display: none;
+}
+.content {
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+  z-index: 9;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+.continue {
+  padding: 16px 24px;
+  border: none;
+  background: $black;
+  color: #fecc00;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  border-radius: 4px;
+  transition: ease-in-out all 0.15s;
+  &:hover {
+    background: $white;
+    color: $black;
+  }
+}
+.start {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #fecc00;
+  background-image: url(../img/bg.png);
+  overflow: hidden;
+  .start-question-button{
+    transition: ease-in-out all .15s;
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+}
+.question {
+  display: none;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+}
+ul{
+  padding-left: 0;
+  li{
+    margin-bottom: 10px;
+    b{
+      margin-right: 5px;
+      display: inline-block;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+.text{
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.autoWriteText{
+  display:none;
+}
+.p2{
+  max-height: 90vh;
+  overflow: auto;
+}
+.append-html{
+  h3{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  p{
+    text-align: center;
+  }
+}
+@include media-breakpoint-only(xl) {
+}
+
+@include media-breakpoint-only(lg) {
+}
+
+@include media-breakpoint-only(md) {
+}
+
+@include media-breakpoint-only(sm) {
+}
+
+@include media-breakpoint-only(xs) {
+}
