@@ -76,9 +76,11 @@ $(document).ready(function () {
       $('.step[data-step="10"]').addClass("active");
     }
     if (stepVal === 10) {
-      $(".continue").hide();
+       $(".continue").hide();
     } else if (stepVal === 11) {
-      $(".continue").hide();
+      $(".radio-checkbox label").removeClass("active");
+      $('.step.radio-checkbox[data-step="10"]').remove();
+      var checked = $(this).is(":checked");
     } else if (stepVal === 12) {
       $(".continue").hide();
     }
@@ -99,8 +101,10 @@ $(document).ready(function () {
       $(this).next().find('.sub').addClass("active");
 
       if ($(".continue").attr("data-attr") === "10") {
+        
         $(".append-html .append-html-in").remove();
-        var htmlAppend = $(this).next().html();
+        var htmlAppend = $(this).next('.sub-content').html();
+        
         $(".append-html").append(
           "<div class='append-html-in'>" + htmlAppend + "</div>"
         );

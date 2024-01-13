@@ -40,6 +40,7 @@
   float: left;
   font-size: 18px;
   margin-bottom: 10px;
+  position: relative;
 }
 
 .title {
@@ -10904,6 +10905,7 @@ label.sub {
 label.sub.active p {
   background: rgba(255, 255, 255, 0.5);
   border-color: #FFF;
+  justify-content: center;
 }
 label.sub h3 {
   margin-top: 20px;
@@ -11024,6 +11026,14 @@ ul li:last-child {
 }
 .append-html p {
   text-align: center;
+}
+
+.step.radio-checkbox[data-step="10"] .hide-row {
+  display: none;
+}
+
+.step.radio-checkbox[data-step="11"] p {
+  justify-content: center;
 }
 
 .append-html-in .sub[for=mind-maintenance],
